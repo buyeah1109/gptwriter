@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="en"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="​We turn your design into a live Webflow project.">
+    <meta name="description" content="">
+    <title>prompt 1</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='nicepage.css') }}" media="screen">
+    <link rel="stylesheet" href="{{ url_for('static', filename='prompt-1.css') }}" media="screen">
+    <meta name="generator" content="Nicepage 5.6.2, nicepage.com">
+    <meta name="referrer" content="origin">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": ""
+}</script>
+    <meta name="theme-color" content="#537459">
+    <meta property="og:title" content="prompt 1">
+    <meta property="og:type" content="website">
+  <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
+  <body class="u-body u-xl-mode" data-lang="en"><header class="u-clearfix u-header u-header" id="sec-abe3"><div class="u-clearfix u-sheet u-sheet-1">
+        <h2 class="u-text u-text-default u-text-1" spellcheck="false"> But no more from now</h2>
+      </div></header>
+    <section class="u-align-center u-clearfix u-gradient u-section-1" id="sec-e9ba">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-clearfix u-layout-wrap u-layout-wrap-1">
+          <div class="u-gutter-0 u-layout">
+            <div class="u-layout-row">
+              <div class="u-container-style u-image u-layout-cell u-size-30 u-image-1" data-image-width="400" data-image-height="265">
+                <div class="u-container-layout u-valign-middle u-container-layout-1">
+                  <div class="u-form u-form-1">
+                    <form action="/prompt" method='post' class="u-clearfix u-form-spacing-10 u-form-vertical u-inner-form" source="email" name="form" style="padding: 10px;">
+                      <div class="u-form-group u-form-message u-label-top">
+                        <label for="message-ef13" class="u-label u-label-1">Your Texts</label>
+                        <textarea placeholder="Enter your texts" rows="7" cols="50" id="message-ef13" name="message" class="u-input u-input-rectangle" required="" spellcheck="false"></textarea>
+                      </div>
+                      <div class="u-form-group u-form-select u-label-top u-form-group-2">
+                        <label for="select-33b7" class="u-label u-label-2">Task</label>
+                        <div class="u-form-select-wrapper">
+                          <select id="select-33b7" name="select" class="u-input u-input-rectangle">
+                            <option value="Academic Rewrite" data-calc="">Academic Rewrite</option>
+                            <option value="Translation to Chinese" data-calc="">Translation to Chinese</option>
+                            <option value="Translation to English" data-calc="">Translation to English</option>
+                          </select>
+                          <svg class="u-caret u-caret-svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" style="fill:currentColor;" xml:space="preserve"><polygon class="st0" points="8,12 2,4 14,4 "></polygon></svg>
+                        </div>
+                      </div>
+                      <div class="u-align-center u-form-group u-form-submit u-label-top">
+                        <input type="submit" value="submit" class="u-border-none u-btn u-btn-round u-btn-submit u-button-style u-hover-palette-2-light-1 u-palette-2-light-3 u-radius-13 u-btn-1">
+                        <!-- <a href="#" class="u-border-none u-btn u-btn-round u-btn-submit u-button-style u-hover-palette-2-light-1 u-palette-2-light-3 u-radius-13 u-btn-1">Submit</a> -->
+                      </div>
+                      <!-- <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
+                      <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div> -->
+                      <input type="hidden" value="" name="recaptchaResponse">
+                      <input type="hidden" name="formServices" value="432171ad6cf6afbbb2447a394fe47b58">
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="u-container-style u-layout-cell u-size-30 u-layout-cell-2">
+                <div class="u-container-layout u-container-layout-2">
+                  <div class="u-align-center u-clearfix u-container-align-center u-group-elements u-valign-middle u-group-elements-1">
+                    <p class="u-align-center u-text u-text-default u-text-1">Generated Answer</p>
+                    <div class="u-border-2 u-border-grey-dark-1 u-expanded-width u-radius-10 u-shape u-shape-round u-shape-1">
+                      {% if result %}
+                      <textarea class="u-border-2 u-border-grey-dark-1 u-expanded-width u-radius-10 u-shape u-shape-round u-shape-2"> {{ result }} </textarea>
+                      {% endif %}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-b559"><div class="u-clearfix u-sheet u-sheet-1">
+      <p class="u-small-text u-text u-text-variant u-text-1">Anthon's Website for Rewriting and Translation</p>
+    </div></footer>
+</body></html>
