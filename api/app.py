@@ -62,5 +62,8 @@ def generate_prompt(paragraph, task):
     
     elif task == "Translation to English":
         instruction = "Translate the following paragraph to English: \"{}\"".format(paragraph)
+    
+    elif task == "中文学术改写":
+        instruction = "以学术语言改写以下段落，保持文章意思不变且准确：\"{}\"".format(paragraph)
        
     return instruction
